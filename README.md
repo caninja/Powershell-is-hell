@@ -1,2 +1,3 @@
 # Powershell-is-hell
-Powershell script that grabs the newest version of 7zipp and installs it.
+
+Hello, this is going to be some microsoft powershell scripts that update, upgrade, installs and uninstalls 3rd party programs for microsoft windows.
