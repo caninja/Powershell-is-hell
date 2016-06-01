@@ -17,10 +17,18 @@ function installer {
   $wget = New-Object System.Net.WebClient
   $wget.DownloadFile($url,$fil);
   cd "C:\"; .\7zipfil.exe /S
+  slettbrask
 }
 function avinstaller {
   cd "C:\Program Files\7-Zip\"; .\Uninstall.exe /S
 }
+function slettbrask {
+  cd "C:\";
+  If (Test-Path "C:\7zipversion.html"){
+  Remove-Item C:\7zipversion.html
+  }Else{ }
+}
+
 If (Test-Path "C:\Program Files\7-Zip\Uninstall.exe"){
   avinstaller
   installer
